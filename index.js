@@ -72,7 +72,7 @@ form.addEventListener("submit", function (event) {
   clearContainer();
   const value = input.value.trim();
   if (value === "") {
-    Error("❌ Por favor ingresa un número de ID.");
+    Error("❌ Por favor ingrese un número");
     return;
   }
   const id = Number(value);
@@ -84,6 +84,6 @@ form.addEventListener("submit", function (event) {
   if (pizzaEncontrada) {
     Pizza(pizzaEncontrada);
   } else {
-    Error(`❌ No se encontró ninguna pizza con el ID ${id}.`);
+    Error(`❌ No se encontró ninguna pizza con ese número ${id}.`);
   }
 });
