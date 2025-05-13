@@ -84,6 +84,6 @@ form.addEventListener("submit", function (event) {
   if (pizzaEncontrada) {
     Pizza(pizzaEncontrada);
   } else {
-    Error(`❌ No se encontró ninguna pizza con ese número ${id}.`);
+    Error(`❌ No se encontró ninguna pizza con el número ${id}.`);
   }
 });
